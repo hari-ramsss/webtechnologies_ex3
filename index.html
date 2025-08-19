@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 3</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @font-face {
+            font-family: 'clash of clans';
+            src: url(./font/Clash_Regular.otf);
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'clash of clans';
+        }
+
+        body {
+            background-image: url(./img/cocback.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-position: center;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .header1 {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            width: 50%;
+            max-width: 95vw;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(12px);
+            align-items: center;
+            min-height: 80vh;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #0002;
+            padding: 32px 18px 24px 18px;
+            gap: 24px;
+        }
+
+        
+
+        .members-section {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .members-section h2 {
+            color: #4169e1;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .members-list {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .member-card {
+            background: #fff6;
+            border-radius: 10px;
+            padding: 12px;
+            width: 120px;
+            text-align: center;
+            box-shadow: 0 1px 4px #0001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .member-img {
+            width: 50px;
+            height: 50px;
+            background: #ddd;
+            border-radius: 50%;
+            margin-bottom: 8px;
+            color: #aaa;
+            line-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .member-card span {
+            font-weight: bold;
+        }
+
+        .member-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .events-section {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .events-section h2 {
+            color: #dc143c;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .events-section ul {
+            color: #333;
+            text-align: left;
+            list-style: disc inside;
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+            max-width: 340px;
+        }
+
+        .event-banner {
+            width: 100%;
+            height: 200px;
+            background: #eee;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 60px;
+            color: #888;
+            box-shadow: 0 1px 4px #0001;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            margin-top: 18px;
+            color: #222;
+            font-size: 1em;
+        }
+
+        .footer hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header1">
+            <div class="hero-section">
+                
+                    <img src="./img/coc_logo_unaltered-removebg-preview.png" alt="Main Logo" style="width: 300px;height: 100px;"/>
+                
+                <h1 class="hero-title">Welcome to the Clash of Clans Community!</h1>
+                <p class="hero-desc">Join fellow Clashers, share strategies, and stay updated with the latest news.</p>
+            </div>
+            <div class="section news-section">
+                <h2>Community News</h2>
+                <ul>
+                    <li>Clan Wars Season begins next week!</li>
+                    <li>New update: Super Troops now available.</li>
+                    <li>Share your best base designs in our forum.</li>
+                </ul>
+            </div>
+            <div class="section clan-section">
+                <h2>About Our Clan</h2>
+                <p>We are a friendly, active group focused on teamwork and fun. All levels welcome!</p>
+                <div class="clan-emblem">
+                    <img src="./img/clanlogo.jpg" alt="Clan Emblem" style="width:100%;height:100%;object-fit:contain;" />
+                </div>
+            </div>
+            <div class="section members-section">
+                <h2>Member Highlights</h2>
+                <div class="members-list">
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="./img/king.webp" alt="Member Image"
+                                style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+                        </div>
+                        <span>Chief soldier</span>
+                        <p>Top Attacker</p>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-img">
+                            <img src="./img/queen.jpg" alt="Member Image"
+                                style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+                        </div>
+                        <span>Queen sally</span>
+                        <p>Best Defender</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section events-section">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Clan Games: Aug 25 - Aug 30</li>
+                    <li>Live Strategy Session: Sep 2</li>
+                    <li>Monthly Trophy Push: Sep 10</li>
+                </ul>
+                <div class="event-banner">
+                    <img src="./img/banner.webp" alt="Event Banner" style="width:100%;height:200px;object-fit:cover;border-radius:8px;" />
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+                <span>Clash on! &copy; 2025 Clash of Clans Community</span>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</body>
+
+</html>`
